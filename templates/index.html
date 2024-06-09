@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo</title>
+</head>
+<body>
+    <h1>Calculadora Gabigu</h1>
+    <div>
+        <form method="POST" id="form" action="/decider">
+            <label>Número 1: </label>
+            <input name="number1" type="text" placeholder="Digite aqui">
+            
+            <br><br>
+            <label>Número 2: </label>
+            <input name="number2" type="text" placeholder="Digite aqui">
+            <br>
+            <br>
+            <select name="operation" id="language">
+                <option value="add">Adição</option>
+                <option value="subtract">Subtração</option>
+                <option value="multiply">Multiplicação</option>
+                <option value="divide">Divisão</option>
+              </select>
+            <input type="submit" value="Calcular" onclick="sendForm">
+        </form>
+    </div>
+</body>
+</html>
