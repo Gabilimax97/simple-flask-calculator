@@ -95,4 +95,4 @@ if __name__ == "__main__":
         PORT = 5000
     
     print(f'Server is running on port {PORT}')
-    app.run(port=int(PORT))
+    app.run(port=int(PORT), debug=True)
