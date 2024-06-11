@@ -1,0 +1,14 @@
+{% include 'partials/_header.html' %}
+{% include 'partials/_navbar.html' %}
+<br>
+<div class="container">
+    <div class="card">
+        <h5 class="card-header">Resultado</h5>
+        <div class="card-body">
+            <h5 class="card-title">{{info.number1}} {{info.operation}} {{info.number2}}</h5>
+            <p class="card-text">O resultado foi {{info.result}}</p>
+            <a href="{{ url_for('index') }}" class="btn btn-primary">Outro cálculo?</a>
+        </div>
+    </div>
+</div>
+{% include 'partials/_footer.html' %}

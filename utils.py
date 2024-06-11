@@ -24,3 +24,16 @@ def divide(a: float, b: float) -> float:
         Returns a divided by b
     """
     return a / b
+
+def operation_as_symbol(operation: str) -> str:
+    """
+    transforma a operação selecionada 
+    pelo usuário em símbolo correspondente 
+    """
+    data = {
+        'add': '+',
+        'subtract': '-',
+        'multiply': '*',
+        'divide': '/',
+    }
+    return data[operation]

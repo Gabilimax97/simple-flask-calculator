@@ -37,7 +37,10 @@ def decider():
 
             response = client.post(path, data=json.dumps(data), headers=headers)
 
-            return response
+            data['operation'] = operation_as_symbol(operation)
+            data['result'] = response.get_json()['result']
+
+            return render_template('answer.html', info=data)
 
     except Exception as error:
         print(error)
